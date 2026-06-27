@@ -20,10 +20,6 @@ spawns:
   cat: []
   mouse: []
 
-kits:
-  cat: {}
-  mouse: {}
-
 messages:
   no-permission: "{prefix} <red>You do not have permission.</red>"
   players-only: "{prefix} <red>Only players can use this command.</red>"
@@ -56,9 +52,6 @@ messages:
 
   player-tagged: "<gradient:#cc44ff:#ff44aa>{tagger}</gradient> <red>tagged</red> <gradient:#44ffaa:#44aaff>{tagged}</gradient><red>! They are now a cat.</red>"
   mice-remaining: "<gray>Mice remaining: <white>{count}</white></gray>"
-
-  kit-saved: "{prefix} <green>Kit for <white>{role}</white> saved.</green>"
-  kit-not-found: "{prefix} <red>Kit for <white>{role}</white> not found.</red>"
 
   status-header: "{prefix} <gray>Game status:</gray>"
   status-state: "<gray>State: <white>{state}</white>"
