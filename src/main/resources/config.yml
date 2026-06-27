@@ -1,0 +1,67 @@
+prefix: "<gradient:#cc44ff:#ff44aa>Tag</gradient> <gray>»</gray>"
+
+lobby:
+  world: "world"
+  x: 0.5
+  y: 64.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+
+game:
+  time-limit-seconds: 180
+  cat-speed: 0
+  mouse-speed: 1
+  friendly-fire: false
+  min-players: 2
+  open-join: true
+
+spawns:
+  cat: []
+  mouse: []
+
+kits:
+  cat: {}
+  mouse: {}
+
+messages:
+  no-permission: "{prefix} <red>You do not have permission.</red>"
+  players-only: "{prefix} <red>Only players can use this command.</red>"
+  invalid-usage: "{prefix} <red>Usage: <white>{usage}</white></red>"
+  reload: "{prefix} <green>Tag configuration reloaded.</green>"
+
+  game-already-running: "{prefix} <red>A game is already running.</red>"
+  game-not-running: "{prefix} <red>No game is currently running.</red>"
+  game-not-setup: "{prefix} <red>Game is not in setup mode.</red>"
+  game-not-waiting: "{prefix} <red>Game is not in waiting state.</red>"
+  game-started: "{prefix} <green>Game started! Cats, hunt your mice!</green>"
+  game-stopped: "{prefix} <yellow>Game stopped.</yellow>"
+  game-reset: "{prefix} <green>Game reset.</green>"
+  game-paused: "{prefix} <yellow>Game paused.</yellow>"
+  game-resumed: "{prefix} <green>Game resumed.</green>"
+  game-win-cats: "<gradient:#cc44ff:#ff44aa>Cats win!</gradient> <gray>All mice have been tagged.</gray>"
+  game-win-mice: "<gradient:#44ffaa:#44aaff>Mice win!</gradient> <gray><white>{count}</white> mouse/mice survived!</gray>"
+  game-tie: "<gray>Game ended in a <white>tie</white>.</gray>"
+
+  spawn-added: "{prefix} <green><white>{role}</white> spawn #<white>{index}</white> added.</green>"
+  spawn-removed: "{prefix} <green><white>{role}</white> spawn #<white>{index}</white> removed.</green>"
+  spawn-not-found: "{prefix} <red>Spawn #<white>{index}</white> not found for role <white>{role}</white>.</red>"
+  lobby-set: "{prefix} <green>Lobby spawn set.</green>"
+
+  joined-role: "{prefix} <green>You joined as <white>{role}</white>.</green>"
+  left-game: "{prefix} <yellow>You left the game.</yellow>"
+  not-in-game: "{prefix} <red>You are not in the game.</red>"
+  role-full: "{prefix} <red>Role <white>{role}</white> is full.</red>"
+  game-not-joinable: "{prefix} <red>The game is not accepting players right now.</red>"
+
+  player-tagged: "<gradient:#cc44ff:#ff44aa>{tagger}</gradient> <red>tagged</red> <gradient:#44ffaa:#44aaff>{tagged}</gradient><red>! They are now a cat.</red>"
+  mice-remaining: "<gray>Mice remaining: <white>{count}</white></gray>"
+
+  kit-saved: "{prefix} <green>Kit for <white>{role}</white> saved.</green>"
+  kit-not-found: "{prefix} <red>Kit for <white>{role}</white> not found.</red>"
+
+  status-header: "{prefix} <gray>Game status:</gray>"
+  status-state: "<gray>State: <white>{state}</white>"
+  status-time: "<gray>Time left: <white>{time}</white>"
+  status-mice: "<gray>Mice alive: <white>{count}</white>"
+  status-cats: "<gray>Cats: <white>{count}</white>"

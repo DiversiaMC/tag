@@ -1,0 +1,44 @@
+name: diversia-tag
+version: "${version}"
+
+main: com.nolly.mc.diversia.tag.DiversiaTag
+api-version: "1.21"
+author: Nolly
+description: Tag game plugin for Diversia
+website: https://github.com/thenolle
+
+depend:
+  - TextAPI
+
+commands:
+  tag:
+    description: Game Master Tag management
+    usage: /<command> <subcommand>
+    permission: diversia.tag.master
+    permission-message: You do not have permission to use this command.
+  tagjoin:
+    description: Join as cat or mouse
+    usage: /<command> <cat|mouse>
+    permission: diversia.tag.join
+    permission-message: You do not have permission to use this command.
+  tagleave:
+    description: Leave the current Tag game
+    usage: /<command>
+    permission: diversia.tag.join
+    permission-message: You do not have permission to use this command.
+
+permissions:
+  diversia.tag.*:
+    description: Full access to Diversia Tag
+    default: op
+    children:
+      diversia.tag.master: true
+      diversia.tag.join: true
+
+  diversia.tag.master:
+    description: Game Master access — full game control
+    default: op
+
+  diversia.tag.join:
+    description: Join/leave Tag games
+    default: true
